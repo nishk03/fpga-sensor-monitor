@@ -1,0 +1,74 @@
+# ================================================
+# VIVADO PROJECT IGNORES
+# ================================================
+# Ignore all files by default (whitelist approach)
+*
+
+# ===============
+# WHITELISTED FILES
+# ===============
+# Source code (VHDL/Verilog/SystemVerilog)
+!*.vhd
+!*.vhdl
+!*.v
+!*.sv
+
+# IP core definitions (critical for rebuilds)
+!*.xci
+!*.xcix
+!*.dcp
+
+# Block design files
+!*.bd
+!*.ui  # BD layout metadata
+
+# Constraint files
+!*.xdc
+
+# Project files
+!*.xpr
+!*.tcl  # TCL scripts for project regeneration
+
+# Documentation
+!*.pdf
+!*.md
+
+# Git-related essentials
+!/.gitignore
+!/.gitmodules
+
+# ===============
+# BLACKLISTED PATTERNS
+# ===============
+# Vivado-generated directories
+*.cache/
+*.hw/
+*.sim/
+*.ip_user_files/
+*.gen/
+*.runs/
+*.tmp/
+
+# Build artifacts & reports
+*.bit
+*.bin
+*.mcs
+*.rpt
+*.log
+*.jou
+*.str
+
+# Simulation files
+*.wdb
+*.wcfg
+*.pb
+
+# IP auto-generated files (except .xci)
+ip_repo/
+*.zip
+*.html
+
+# OS/editor temp files
+.DS_Store
+*.bak
+*.swp
